@@ -17,10 +17,14 @@
 }
 
 .mushroom {
+    .mushroom {
     position: absolute;
-    width: 100px;
-    opacity: 0.8;
-    animation: float 6s infinite alternate ease-in-out;
+    width: 300px; /* Было 100px, теперь грибы крупнее */
+    height: auto;
+    opacity: 1;
+    animation: float 3s infinite alternate ease-in-out;
+}
+;
 }
 
 @keyframes float {
@@ -123,13 +127,16 @@
     <footer>
         <p><a class="button" href="https://t.me/amperfly">Контакты</a></p>
     </footer>
-</body>
+</body> 
+
 </html>
 <!-- Добавляем плавающие грибы перед закрывающим тегом </body> -->
 <div class="mushroom-container">
-    <img src="https://raw.githubusercontent.com/danil-stack/mushroom-site/main/grib.png" class="mushroom mushroom1">
-    <img src="https://raw.githubusercontent.com/danil-stack/mushroom-site/main/grib.png" class="mushroom mushroom2">
-    <img src="https://raw.githubusercontent.com/danil-stack/mushroom-site/main/grib.png" class="mushroom mushroom3">
+    <img src="https://raw.githubusercontent.com/danil-stack/mushroom-site/main/grib.png" class="mushroom mushroom1" alt="">
+    <img src="https://raw.githubusercontent.com/danil-stack/mushroom-site/main/grib.png" class="mushroom mushroom2" alt="">
+    <img src="https://raw.githubusercontent.com/danil-stack/mushroom-site/main/grib.png" class="mushroom mushroom3" alt="">
+</div>
+
 </div>
 
 </div>
