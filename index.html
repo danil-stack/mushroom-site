@@ -5,7 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мухоморы и сознание</title>
     <style>
-        body {
+        body {/* Анимация грибов */
+.mushroom-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.mushroom {
+    position: absolute;
+    width: 100px;
+    opacity: 0.8;
+    animation: float 6s infinite alternate ease-in-out;
+}
+
+.mushroom1 { top: 10%; left: 20%; animation-duration: 8s; }
+.mushroom2 { top: 50%; left: 60%; animation-duration: 10s; }
+.mushroom3 { top: 70%; left: 30%; animation-duration: 7s; }
+
+@keyframes float {
+    from { transform: translateY(0); }
+    to { transform: translateY(-20px); }
+}
+
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
