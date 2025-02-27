@@ -23,9 +23,15 @@
     animation: float 6s infinite alternate ease-in-out;
 }
 
-.mushroom1 { top: 10%; left: 20%; animation-duration: 8s; }
-.mushroom2 { top: 50%; left: 60%; animation-duration: 10s; }
-.mushroom3 { top: 70%; left: 30%; animation-duration: 7s; }
+@keyframes float {
+    from { transform: translateY(0); }
+    to { transform: translateY(-40px); } /* Увеличиваем амплитуду */
+}
+
+.mushroom1 { top: 10%; left: 20%; animation-duration: 4s; } /* Было 8s */
+.mushroom2 { top: 50%; left: 60%; animation-duration: 5s; } /* Было 10s */
+.mushroom3 { top: 70%; left: 30%; animation-duration: 3s; } /* Было 7s */
+
 
 @keyframes float {
     from { transform: translateY(0); }
@@ -121,9 +127,9 @@
 </html>
 <!-- Добавляем плавающие грибы перед закрывающим тегом </body> -->
 <div class="mushroom-container">
-    <img src="https://raw.githubusercontent.com/danil-stack/mushroom-site/refs/heads/main/DALL%C2%B7E%202025-02-27%2012.13.01%20-%20A%20cartoon-style%20illustration%20of%20a%20red%20fly%20agaric%20mushroom%20(Amanita%20muscaria)%20with%20white%20spots.%20The%20mushroom%20has%20a%20slightly%20curved%20stem%20and%20a%20friendly%2C.webp" class="mushroom mushroom1">
-    <img src="https://raw.githubusercontent.com/danil-stack/mushroom-site/refs/heads/main/DALL%C2%B7E%202025-02-27%2012.13.01%20-%20A%20cartoon-style%20illustration%20of%20a%20red%20fly%20agaric%20mushroom%20(Amanita%20muscaria)%20with%20white%20spots.%20The%20mushroom%20has%20a%20slightly%20curved%20stem%20and%20a%20friendly%2C.webp" class="mushroom mushroom2">
-    <img src="https://raw.githubusercontent.com/danil-stack/mushroom-site/refs/heads/main/DALL%C2%B7E%202025-02-27%2012.13.01%20-%20A%20cartoon-style%20illustration%20of%20a%20red%20fly%20agaric%20mushroom%20(Amanita%20muscaria)%20with%20white%20spots.%20The%20mushroom%20has%20a%20slightly%20curved%20stem%20and%20a%20friendly%2C.webp" class="mushroom mushroom3">
+    <img src="https://github.com/danil-stack/mushroom-site/blob/main/DALL%C2%B7E-2025-02-27-12.13.png" class="mushroom mushroom1">
+    <img src="https://github.com/danil-stack/mushroom-site/blob/main/DALL%C2%B7E-2025-02-27-12.13.png" class="mushroom mushroom2">
+    <img src="https://github.com/danil-stack/mushroom-site/blob/main/DALL%C2%B7E-2025-02-27-12.13.png" class="mushroom mushroom3">
 </div>
 
 </body>
